@@ -1,0 +1,10 @@
+[alias]
+l = log --pretty=oneline -n 20 --graph --abbrev-commit --decorate
+s = status
+st = status
+dc = diff --cached
+
+[pull]                                                                                                                                                                                                      
+        rebase = true                                                                                                                                                                                       
+[rebase]                                                                                                                                                                                                    
+        autoStash = true     

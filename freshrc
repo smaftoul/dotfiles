@@ -1,0 +1,52 @@
+# freshshell.com
+#
+# Examples:
+#
+#   fresh twe4ked/dotfiles shell/functions/\*
+#   fresh jasoncodes/dotfiles shell/aliases/rails.sh
+#   fresh jasoncodes/dotfiles config/tmux.conf --file
+#
+# See http://freshshell.com/readme for documentation.
+
+
+fresh freshshell/fresh bin/fresh --bin
+fresh mathiasbynens/dotfiles .gitconfig --file
+fresh gitconfig --file
+fresh gitignore --file
+
+fresh sorin-ionescu/prezto . --file=~/.zprezto/
+fresh sorin-ionescu/prezto runcoms/zlogin --file
+fresh sorin-ionescu/prezto runcoms/zshrc
+#fresh sorin-ionescu/prezto runcoms/zpreztorc --file
+fresh zpreztorc --file
+
+fresh rupa/z z.sh
+fresh rimraf/k k.sh
+
+fresh direnv 
+fresh completion
+
+#fresh /usr/local/bin/nvim --bin=~/bin/vi
+#fresh /usr/local/bin/nvim --bin=~/bin/vim
+
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh zsh-users/zsh-completions src/_ansible --file=completion/_ansible
+fresh zsh-users/zsh-completions src/_ansible-playbook --file=completion/_ansible-playbook
+fresh docker/cli contrib/completion/zsh/_docker  --file=completion/_docker 
+
+fresh gpg-agent.conf --file=~/.gnupg/gpg-agent.conf
+
+
+fresh junegunn/vim-plug plug.vim --file=~/.config/nvim/autoload/plug.vim
+fresh init.vim --file=~/.config/nvim/init.vim
+
+# manually executed shell commands:
+# open ./.fresh/source/jcberthon/solarized/osx-terminal.app-colors-solarized/Solarized\ Dark\ Yosemite.terminal
+# defaults write com.apple.terminal "Default Window Settings" -string "Solarized Dark Yosemite"
+# defaults write com.apple.terminal "Startup Window Settings" -string "Solarized Dark Yosemite"
+#fresh jcberthon/solarized solarized/osx-terminal.app-colors-solarized/Solarized\ Dark\ Yosemite.terminal
+#
+#fresh bhilburn/powerlevel9k powerlevel9k.zsh-theme --file=~/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup
+#fresh bhilburn/powerlevel9k
+#$ git clone https://github.com/bhilburn/powerlevel9k.git  ~/.zprezto/modules/prompt/external/powerlevel9k
+#$ ln -s ~/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme ~/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup
