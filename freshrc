@@ -19,6 +19,7 @@ fresh sorin-ionescu/prezto runcoms/zlogin --file
 fresh sorin-ionescu/prezto runcoms/zshrc
 #fresh sorin-ionescu/prezto runcoms/zpreztorc --file
 fresh zpreztorc --file
+fresh zshrc --file
 
 fresh rupa/z z.sh
 fresh rimraf/k k.sh
