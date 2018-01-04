@@ -3,6 +3,9 @@ tap 'homebrew/services'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
+brew 'libgit2'
+cask 'caffeine'
+brew "gnu-sed", args: ["with-default-names"]
 brew 'python'
 brew 'ansible'
 brew 'direnv'
@@ -16,6 +19,7 @@ brew 'pinentry-mac'
 brew 'mas'
 brew 'zsh'
 brew 'neovim'
+#cask 'vagrant', :allow_untrusted => true
 #cask 'vagrant', :allow_untrusted => true
 cask 'virtualbox'
 cask 'tunnelblick'
